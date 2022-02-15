@@ -25,7 +25,7 @@ public class ApplicationMessageControllerTest {
     @Test
     public void testHappyPathDataCall() throws Exception {
         MvcResult result = mockMvc.perform(get("/")
-                    .contentType(MediaType.APPLICATION_JSON_VALUE)):wq
+                    .contentType(MediaType.APPLICATION_JSON_VALUE))
                     .andDo(print())
                     .andReturn();
 
